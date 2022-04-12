@@ -49,7 +49,10 @@ sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-
 sudo chmod +x /usr/local/bin/docker-compose
 docker-compose --version
 
+# Add $USER to docker group
+
+sudo usermod -aG docker $USER
+
 # Start Portainer 
 
 #./portainerInstall.sh
-
